@@ -41,6 +41,11 @@ export class AppComponent {
                   title: 'Settings',
                   url: '/settings',
                   icon: 'cog'
+                },
+                {
+                  title: 'Themes',
+                  url: '/themes',
+                  icon: 'brush'
                 }
               ];
 
@@ -57,6 +62,11 @@ export class AppComponent {
                   title: 'Settings',
                   url: '/settings',
                   icon: 'cog'
+                },
+                {
+                  title: 'Themes',
+                  url: '/themes',
+                  icon: 'brush'
                 }
               ];
 

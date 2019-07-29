@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Themes</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-radio-group allow-empty-selection="true" name="radio-group" (ionChange)="radioGroupChange($event)">
+            <ion-list-header>
+                <ion-label>Select Themes</ion-label>
+            </ion-list-header>
+
+            <ion-item>
+                <ion-label>Autumn</ion-label>
+                <ion-radio slot="start" value="autumn"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Dark</ion-label>
+                <ion-radio slot="start" value="night"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Neon</ion-label>
+                <ion-radio slot="start" value="neon"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+    </ion-list>
+    <!-- <ion-button (click)="changeTheme('autumn')">Autumn</ion-button>
+    <ion-button (click)="changeTheme('night')">Dark</ion-button>
+    <ion-button (click)="changeTheme('neon')">Neon</ion-button> -->
+</ion-content>
