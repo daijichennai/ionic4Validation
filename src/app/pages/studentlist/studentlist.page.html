@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Student list</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tr color="primary">
+                <td text-center>Reg No</td>
+                <td text-center>Name</td>
+                <td text-center>DOB</td>
+                <td text-center>Maths</td>
+                <td text-center>Science</td>
+                <td text-center>Comp</td>
+            </tr>
+            <tr *ngFor="let i of jsonItems">
+                <td>{{i.studentRegNo}}</td>
+                <td>{{i.studentName}}</td>
+                <td text-center>{{i.dateOfBirth}}</td>
+                <td>{{i.mathsMarks}}</td>
+                <td>{{i.scienceMarks}}</td>
+                <td>{{i.computerMarks}}</td>
+            </tr>
+        </table>
+    </div>
+</ion-content>

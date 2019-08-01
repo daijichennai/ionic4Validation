@@ -38,15 +38,15 @@ export class AppComponent {
                   icon: 'home'
                 },
                 {
+                  title: 'Student List',
+                  url: '/studentlist',
+                  icon: 'person'
+                },
+                {
                   title: 'Settings',
                   url: '/settings',
                   icon: 'cog'
                 },
-                {
-                  title: 'Themes',
-                  url: '/themes',
-                  icon: 'brush'
-                }
               ];
 
               this.router.navigateByUrl('/home');
